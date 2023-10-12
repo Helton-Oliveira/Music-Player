@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Montserrat&family=Nunito&display=swap');
+
+:root {
+    --back:  #212A3E;
+    --primary-color: #394867;
+    --secondary-color: #9BA4B5;
+    --tertiary-color: #1C6DD0;
+    --font--player: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: var(--back);
+}
+
+/* navBar content ================================================== */
+
+.search__container{
+    display: flex;
+    padding: 4%;
+}
+
+.search__bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+}
+
+.fa-compact-disc{
+    font-size: 3.75rem;
+    color: var(--tertiary-color);
+}
+
+.search__window{
+    display: flex;
+    background-color: var(--primary-color);
+    border: transparent;
+    border-radius: 0.313rem;
+    padding: 0.5%;
+    width: 45%;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.search__input {
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--font--player);
+    font-size: 1.3rem;
+}
+
+.search__input::placeholder {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    font-family: var(--font--player);
+}
+
+.fa-magnifying-glass{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* section content ================================================== */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 20%;
+}
+
+.icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.icons > i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.song__box__container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.song__box{
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.song__box > img {
+    width: 9.375rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.band{
+    font-family: var(--font--player);
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.music__name{
+    font-family: var(--font--player);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.song__box > img:hover{
+    border: solid 0.063rem var(--secondary-color);
+}
+
+
+/* footer ================================================== */
+.footer__container{
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music__card{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.fa-plus{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-left: 0.313rem;
+    cursor: pointer;
+}
+
+.music__card > img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.625rem;
+}
+
+.reproduction__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.controlers{
+    display: flex;
+    gap: 3.125rem;
+}
+
+.controlers > i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.closed {
+    display: none;
+}
+
+
+

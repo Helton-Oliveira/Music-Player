@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="search__container">
+        <nav class="search__bar">
+            <i class="fa-solid fa-compact-disc"></i>
+            <div class="search__window">
+                <input type="text" placeholder="Pesquisar Musica..." required class="search__input" data-search="search">
+                <i class="fa-solid fa-magnifying-glass" data-btn=""></i>
+            </div>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="icons">
+            <i class="fa-solid fa-clock-rotate-left" alt="music history"></i>
+            <i class="fa-regular fa-heart" alt="favorites"></i>
+            <i class="fa-solid fa-layer-group" alt="My playlist"></i>
+        </div>
+        <div class="song__box__container" data-card="cards">
+                
+        </div>
+    </section>
+
+    <footer id="footer">
+    <!-- <div class="footer__container" id="footer">
+            <div class="music__card">
+                <img src="/image/albumLogo.jfif" alt="">
+                <div>
+                    <p class="band">Nome da banda</p>
+                    <p class="music__name">nome da musica</p>
+                </div>      
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="reproduction__container">
+                <div class="controlers">
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div> 
+        </div> -->
+    </footer>
+    
+
+    <script src="/app/app.js"></script>
+    <script src="/app/search.js"></script>
+    <script src="/app/screen.js"></script>
+    <script src="/app/controlers.js"></script>
+</body>
+</html>
