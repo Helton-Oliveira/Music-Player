@@ -40,3 +40,12 @@ function backOrNext(musics, option) {
         footer(musics, musics[index]);
      }
 };
+
+function favoriteMusic(favoriteSong) {
+    const favoriteBtn = document.querySelector('#plus')
+
+    favoriteBtn.addEventListener('click', () => {
+        favoriteArray.push(favoriteSong)
+        localStorage.setItem('favoriteSong', JSON.stringify(favoriteArray))
+    })
+}
