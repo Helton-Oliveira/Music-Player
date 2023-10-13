@@ -1,6 +1,10 @@
 const musicCards = document.querySelector('[data-card]');
 const footerElement = document.querySelector('#footer');
 let audio = new Audio('');
+const favoriteArray = JSON.parse(localStorage.getItem('favoriteSong')) || [];
+
+displayMusclesOnScreen(favoriteArray);
+listenToMusic(favoriteArray);
 
 
 function displayMusclesOnScreen(data) {
