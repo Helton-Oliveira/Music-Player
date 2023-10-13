@@ -128,6 +128,17 @@ body{
     border: solid 0.063rem var(--secondary-color);
 }
 
+.error{
+    color: #DF2E38;
+    font-family: var(--font--player);
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 6px;
+    border: 1px transparent;
+    border-radius: 10rem;
+    background-color: #FEA1A1;
+}
+
 
 /* footer ================================================== */
 .footer__container{
