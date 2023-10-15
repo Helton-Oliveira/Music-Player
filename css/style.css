@@ -6,11 +6,13 @@
     --secondary-color: #9BA4B5;
     --tertiary-color: #1C6DD0;
     --font--player: 'Nunito', sans-serif;
+    --quaternary-color: #fff;
 }
 
 body{
     background-color: var(--back);
 }
+
 
 /* navBar content ================================================== */
 
@@ -30,6 +32,7 @@ body{
 .fa-compact-disc{
     font-size: 3.75rem;
     color: var(--tertiary-color);
+    cursor: pointer;
 }
 
 .search__window{
@@ -175,15 +178,84 @@ body{
     flex-direction: column;
 }
 
-.controlers{
+.controlers__container,  .controls{
     display: flex;
     gap: 3.125rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.controlers > i {
+.controlers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.reproduction-bar{
+  height: 0.11rem;
+  width: 100%;
+  border: 3px transparent;
+}
+
+.reproduction-bar::-webkit-progress-bar{
+    background: var(--secondary-color);
+}
+
+.reproduction-bar::-moz-progress-bar{
+    background: var(--secondary-color);
+}
+
+.reproduction-bar::-webkit-progress-value {
+    background: var(--quaternary-color);
+}
+
+.reproduction-bar::-moz-progress-value {
+    background: var(--quaternary-color);
+}
+
+.fa-backward, .fa-play, .fa-forward, .fa-pause {
     font-size: 2rem;
     color: var(--secondary-color);
     cursor: pointer;
+}
+
+.volume {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.fa-volume-high{
+    margin-left: -10px;
+}
+
+.volume_bar{
+    height: 0.1rem;
+    border: 1px transparent;
+}
+
+.volume_bar::-webkit-progress-bar{
+    background: var(--secondary-color);
+}
+
+.volume_bar::-moz-progress-bar{
+    background: var(--secondary-color);
+}
+
+.volume_bar::-webkit-progress-value {
+    background: var(--quaternary-color);
+}
+
+.volume_bar::-moz-progress-value {
+    background: var(--quaternary-color);
+}
+
+.closed {
+    display: none;
 }
 
 .closed {
